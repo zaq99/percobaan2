@@ -3,12 +3,13 @@
 
 
 body {
-    background-color:white;
-    color: #232323;
+    color: #240046;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    background-color: #e8e3ff;
 }
 
 header {
@@ -51,7 +52,7 @@ a {
     margin-top: 10px;
     margin-left: 20px;
 
-    background: #E4E4E4;
+    background: #3c096c;
     box-shadow: 5px 10px 14px rgba(90, 24, 154, 0.1);
     border-radius: 14px;
 }
@@ -82,7 +83,7 @@ a.dua {
     height: 100px;
     margin: 6px;
 
-    background: #FFFFFF;
+
     box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
 
@@ -91,7 +92,7 @@ a.dua {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 14px;
+    margin: 0px 6px;
 }
 
 
@@ -100,7 +101,7 @@ a.dua {
     position: static;
     width: 44px;
     height: 44px;
-    background: #E4E4E4;
+    background: #bbadff;
     border-radius: 10px;
 
     flex: none;
@@ -122,7 +123,7 @@ a.dua {
 }
 
 .habib a {
-    color: #232323;
+    color: #240046;
     font-weight: 700;
     display: block;
     position: static;
@@ -150,7 +151,7 @@ h2 {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #ffffff;
+    background-color: #e8e3ff;
     font-size: 18px;
     font-weight: 700;
     margin-top: 32px;
@@ -168,15 +169,15 @@ section {
 
 /* bungkus paling luar setelah section*/
 .bungkus {
+
     width: 100%;
-    height: 450px;
+    height: 400px;
     overflow: scroll;
 }
 
 /* card list*/
 .card {
-    color: #232323;
-    font-family: 'Montserrat Alternates', sans-serif;
+    color: #240046;
     width: 83%;
     height: 50px;
     border: none;
@@ -186,14 +187,13 @@ section {
     margin-left: 20px;
 
     display: block;
-    background: white;
     box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
 }
 
 /*card product*/
 a.card2 {
-    color: #232323;
+    color: #240046;
     display: block;
     width: 140px;
     height: 200px;
@@ -204,7 +204,6 @@ a.card2 {
 }
 
 .card-kitab {
-    color: #232323;
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -241,7 +240,7 @@ a.card2 {
 }
 
 a .frame2 {
-    background-color: #E4E4E4;
+    background-color: #bbadff;
     width: 48px;
     height: 48px;
     margin-right: 12px;
@@ -267,18 +266,30 @@ a p {
 }
 
 .card-kitab p {
+    font-weight: 400;
     text-align: right;
     margin-bottom: 50px;
 }
 
-@media screen and (max-width:513px) {
+.card-kitab p span {
+    color: #232323;
+    font-size: 14px;
 
-    .container {
-        padding: 0px;
+}
+
+@media screen and (min-width:414px) {
+
+    .card-kitab p {
+        font-size: 20px;
+
     }
 
     .habib {
-        margin: 6px;
+        margin: 12px;
+    }
+
+    .bungkus {
+        height: 550px;
     }
 
 
