@@ -52,7 +52,7 @@ a {
     margin-top: 10px;
     margin-left: 20px;
 
-    background: #3c096c;
+    background: url(../assets/Frame\ 42.svg) #3c096c;
     box-shadow: 5px 10px 14px rgba(90, 24, 154, 0.1);
     border-radius: 14px;
 }
