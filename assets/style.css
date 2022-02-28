@@ -250,6 +250,22 @@ a .frame2 {
     border-radius: 14px;
 }
 
+a .merah {
+    background-color: rgb(253, 197, 197);
+}
+
+a .biru {
+    background-color: #9e9cbe;
+}
+
+a .hijau {
+    background-color: rgb(168, 214, 168);
+}
+
+a .kuning {
+    background-color: rgb(219, 219, 166);
+}
+
 .frame2 img {
     width: 36px;
     height: 36px;
