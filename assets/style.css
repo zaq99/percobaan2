@@ -3,11 +3,13 @@
 
 
 body {
-    color: #232323;
+    color: #240046;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    background-color: #e8e3ff;
 }
 
 header {
@@ -25,7 +27,6 @@ nav {
 h1 {
     font-size: 18px;
     margin-top: 50px;
-    margin-right: 145px;
     float: left;
 }
 
@@ -34,6 +35,13 @@ nav img {
     width: 25px;
     height: 25px;
     margin-top: 50px;
+    margin-right: 20px;
+
+    float: right;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* papan iklan*/
@@ -44,29 +52,38 @@ nav img {
     margin-top: 10px;
     margin-left: 20px;
 
-    background: #E4E4E4;
+    background: #3c096c;
     box-shadow: 5px 10px 14px rgba(90, 24, 154, 0.1);
     border-radius: 14px;
 }
 
+a.dua {
+    width: 100%;
+    margin-left: 0;
+
+    border-radius: 0;
+    box-shadow: 0px 4px 14px rgba(90, 24, 154, 0.1);
+}
+
+/* pembungkus card habib*/
 .container {
     /* Auto layout */
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 25px;
 
-    width: 80%;
-    height: 100px;
+    width: 90%;
 }
 
 .habib {
     position: static;
     width: 66px;
     height: 100px;
+    margin: 6px;
 
-    background: #FFFFFF;
+
     box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
 
@@ -75,21 +92,17 @@ nav img {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 14px;
+    margin: 0px 6px;
 }
 
+
+/*frame icon habib*/
 .habib .frame {
-    /* Frame 16 */
-
-
     position: static;
     width: 44px;
     height: 44px;
-
-    background: #E4E4E4;
+    background: #bbadff;
     border-radius: 10px;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -97,8 +110,9 @@ nav img {
     margin: -5px 10px 2px 10px;
 }
 
+
+/* icon habib*/
 .habib .frame img {
-    background-color: cadetblue;
     position: static;
     width: 32px;
     height: 32px;
@@ -108,9 +122,8 @@ nav img {
 }
 
 .habib a {
-    color: #232323;
+    color: #240046;
     font-weight: 700;
-    text-decoration: none;
     display: block;
     position: static;
     width: 32px;
@@ -134,10 +147,17 @@ nav img {
 
 /* Dashboard*/
 h2 {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e8e3ff;
     font-size: 18px;
     font-weight: 700;
     margin-top: 32px;
     margin-left: 20px;
+
+    position: sticky;
+    top: 0;
 }
 
 /* sektor pembungkus list*/
@@ -146,17 +166,18 @@ section {
     padding-bottom: 20px;
 }
 
+/* bungkus paling luar setelah section*/
 .bungkus {
+
     width: 100%;
-    height: 250px;
+    height: 400px;
     overflow: scroll;
 }
 
 /* card list*/
 .card {
-    color: #232323;
-    font-family: 'Montserrat Alternates', sans-serif;
-    width: 80%;
+    color: #240046;
+    width: 83%;
     height: 50px;
     border: none;
     padding: 12px;
@@ -164,15 +185,62 @@ section {
     margin-bottom: 14px;
     margin-left: 20px;
 
-    text-decoration: none;
     display: block;
-    background: white;
     box-shadow: 5px 10px 14px rgba(0, 0, 0, 0.1);
     border-radius: 14px;
 }
 
+/*card product*/
+a.card2 {
+    color: #240046;
+    display: block;
+    width: 140px;
+    height: 200px;
+    padding-left: 16px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.card-kitab {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+
+    box-shadow: 10px 10px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+    overflow: auto;
+}
+
+
+.card2 img {
+    width: 123px;
+    height: 123px;
+    margin-top: 16px;
+}
+
+.card2 h3 {
+    font-size: 10px;
+
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
+
+.card2 p {
+    font-size: 8px;
+}
+
+.card2 hr {
+    color: red;
+    margin-top: 5px;
+    margin-right: 70px;
+    width: 20%;
+
+    float: left;
+}
+
 a .frame2 {
-    background-color: #E4E4E4;
+    background-color: #bbadff;
     width: 48px;
     height: 48px;
     margin-right: 12px;
@@ -197,12 +265,31 @@ a p {
     font-size: 10px;
 }
 
+.card-kitab p {
+    font-weight: 400;
+    text-align: right;
+    margin-bottom: 50px;
+}
 
-@media screen and (max-width:513px) {
+.card-kitab p span {
+    color: #232323;
+    font-size: 14px;
 
+}
+
+@media screen and (min-width:414px) {
+
+    .card-kitab p {
+        font-size: 20px;
+
+    }
 
     .habib {
-        margin: 6px;
+        margin: 12px;
+    }
+
+    .bungkus {
+        height: 550px;
     }
 
 
